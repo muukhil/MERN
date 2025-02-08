@@ -1,0 +1,6 @@
+.box-model{
+    background-color: palegreen;
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid blue;
+}
