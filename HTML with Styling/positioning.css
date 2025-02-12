@@ -1,0 +1,23 @@
+.fixed-pos{
+    position: fixed;
+    top:50px;
+}
+
+.relative-pos{
+    position: relative;
+    
+}
+.sticky-pos{
+    position:sticky;
+    top:50px;
+}
+
+.float-left{
+    float: left;
+    margin: 20px;
+}
+
+.float-right{
+    float: right;
+    margin: 10px;
+}

@@ -1,6 +1,33 @@
 .box-model{
     background-color: palegreen;
-    margin: 5px;
-    padding: 10px;
+    margin: 20px;
+    padding: 15px;
     border: 2px solid blue;
+}
+
+/* h1{
+    margin-top: 10px;
+} */
+body {
+    margin-top: 60px; /* Adjust based on header height */
+}
+.fixed-position{
+    position: fixed;
+    background-color: aqua;
+    text-align: center;
+    top:0;
+    left:0;
+    padding: 5px;
+    width: 100%;
+
+}
+.sticky-position{
+    position: sticky;
+    top:0px;
+    background-color: aqua;
+    text-align: center;
+    top:0;
+    left:0;
+    padding: 5px;
+    width: 100%;
 }
