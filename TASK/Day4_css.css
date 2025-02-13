@@ -1,0 +1,10 @@
+input{
+    border-radius: 20px;
+    color:aqua;
+}
+
+.div-container{
+    border: 2px solid orange;
+    align-self: center;
+    width: 20rem;
+}

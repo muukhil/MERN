@@ -1,8 +1,12 @@
 .box-model{
+    width: 1000px;
     background-color: palegreen;
+    margin: 5px;
+    padding: 10px;
     margin: 20px;
     padding: 15px;
-    border: 2px solid blue;
+    border: solid 5px;
+    border-color: blue;
 }
 
 /* h1{
