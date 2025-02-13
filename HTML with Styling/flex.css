@@ -1,0 +1,27 @@
+nav{
+    display: flex;
+    /* flex-direction: ; */
+    list-style-type: none;
+    justify-content: space-evenly;
+    padding: 10px; 
+    background-color: chocolate;
+}
+
+header{
+}
+
+.link{
+    color: white;
+    text-decoration: none;
+    padding: 3px;
+}   
+
+.link:hover{
+    color: chocolate;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.sub-link{
+    background-color: white;
+}

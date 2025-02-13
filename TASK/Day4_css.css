@@ -5,6 +5,8 @@ input{
 
 .div-container{
     border: 2px solid orange;
+    border-radius: 10px;
+    background-color: bisque;
     align-self: center;
     width: 20rem;
 }
