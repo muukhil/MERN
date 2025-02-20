@@ -1,28 +1,50 @@
-import React from 'react'
-
-const NavBar = ()=>{
-    var styling = {
-        listStyleType: "none",
-        display:"flex",
-        backgroundColor: "red",
-        gap:"15px",        
-        justifyContent: "space-evenly",
-    }
-    var aStyling = {
-        textDecoration: "none",
-    }
-    return (
-        <header>
-            <nav>
-                <ul style={styling}>
-                    <li><a href="#" style={aStyling}>Home</a></li>
-                    <li><a href="#" style={aStyling}>About</a></li>
-                    <li><a href="#" style={aStyling}>Contact</a></li>
-                    <li><a href="#" style={aStyling}>Gallery</a></li>
-                    <li><a href="#" style={aStyling}>Signup</a></li>
-                </ul>
-            </nav>
-        </header>
-    )
-}
-export default NavBar
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import "../css/NavBar.css"
+const Navbar = () => {
+  var [val, showDropdown] = useState(false);
+  return (
+    <header>
+      <nav>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+        <li>
+          <Link to="/gallery">Gallery</Link>
+        </li>
+        <li
+          onMouseEnter={()=> showDropdown(true)} 
+          onMouseLeave={()=> showDropdown(false)}>  
+          <span>Hooks</span>
+            {val && (
+              <div className="dropdown-link"> 
+                <ol>
+                  <li>
+                    <Link to="/use-state">useState</Link>
+                  </li>
+                  <li>
+                    <Link to="/use-effect">useEffect</Link>
+                  </li>
+                  <li>
+                    <Link to="/UseEffectsAPI">useEffectAPI</Link>
+                  </li>
+                  <li>
+                    <Link to="/UseRef">useRef</Link>
+                  </li>
+                </ol>
+              </div>)}
+          </li>
+        <li>
+          <Link to="/contact">Contact</Link>
+        </li>
+        <li>
+          <Link to="/signup">Signup</Link>
+        </li>
+      </nav>
+    </header>
+  );
+};
+export default Navbar;
