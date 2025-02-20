@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import UseEffect from "./assets/Components/Functional_Components/Hooks/UseEffect";
 import UseEffectsAPI from "./assets/Components/Functional_Components/Hooks/UseEffectsAPI";
 import UseRef from "./assets/Components/Functional_Components/Hooks/UseRef";
+import UseMemo from "./assets/Components/Functional_Components/Hooks/UseMemo";
 
 
 
@@ -25,6 +26,7 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/UseEffectsAPI" element={<UseEffectsAPI />} />
           <Route path="/UseRef" element={<UseRef />} />
+          <Route path="UseMemo" element={<UseMemo />} />
         </Routes>
       </BrowserRouter>
     </main>
