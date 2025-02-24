@@ -1,17 +1,20 @@
-import Home from "./assets/Components/Functional_Components/Home";
-import About from "./assets/Components/Functional_Components/About";
-import Gallery from "./assets/Components/Functional_Components/Gallery";
-import Contact from "./assets/Components/Functional_Components/Contact";
-import Signup from "./assets/Components/Functional_Components/Signup";
-import NavBar from "./assets/Components/Functional_Components/NavBar";
+import './App.css'
+import Home from "./assets/Components/FunctionalComponents/Home";
+import About from "./assets/Components/FunctionalComponents/About";
+import Gallery from "./assets/Components/FunctionalComponents/Gallery";
+import Contact from "./assets/Components/FunctionalComponents/Contact";
+import Signup from "./assets/Components/FunctionalComponents/Signup";
+import NavBar from "./assets/Components/FunctionalComponents/NavBar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import UseEffect from "./assets/Components/Functional_Components/Hooks/UseEffect";
-import UseEffectsAPI from "./assets/Components/Functional_Components/Hooks/UseEffectsAPI";
-import UseRef from "./assets/Components/Functional_Components/Hooks/UseRef";
-import UseMemo from "./assets/Components/Functional_Components/Hooks/UseMemo";
-import UseCallback from "./assets/Components/Functional_Components/Hooks/UseCallback";
-import UseMemoize from "./assets/Components/Functional_Components/Hooks/UseMomoize";
-import HoC from "./assets/Components/Functional_Components/HoC/HoC";
+import UseEffect from "./assets/Components/FunctionalComponents/Hooks/UseEffect";
+import UseEffectsAPI from "./assets/Components/FunctionalComponents/Hooks/UseEffectsAPI";
+import UseRef from "./assets/Components/FunctionalComponents/Hooks/UseRef";
+import UseMemo from "./assets/Components/FunctionalComponents/Hooks/UseMemo";
+import UseCallback from "./assets/Components/FunctionalComponents/Hooks/UseCallback";
+import UseMemoize from "./assets/Components/FunctionalComponents/Hooks/UseMomoize";
+import HoC from "./assets/Components/FunctionalComponents/HoC/HoC";
+import LazyLoadingAndSuspense from './assets/Components/FunctionalComponents/Memoization/LazyLoadingAndSuspense.jsx';
+import CoE from './assets/Components/FunctionalComponents/CoE.jsx';
 
 function App() {
   return (
@@ -23,12 +26,14 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/use-effect" element={<UseEffect />} />
-          <Route path="/UseEffectsAPI" element={<UseEffectsAPI />} />
-          <Route path="/UseRef" element={<UseRef />} />
-          <Route path="UseMemo" element={<UseMemo />} />
-          <Route path="/use-callback" element= {<UseCallback />} />
-          <Route path="/use-memoize" element= {<UseMemoize />} />
-          <Route path="/hoc" element= {<HoC />} />
+          <Route path="/use-effects-api" element={<UseEffectsAPI />} />
+          <Route path="/use-ref" element={<UseRef />} />
+          <Route path="/use-memo" element={<UseMemo />} />
+          <Route path="/use-callback" element={<UseCallback />} />
+          <Route path="/use-memoize" element={<UseMemoize />} />
+          <Route path="/hoc" element={<HoC />} />
+          <Route path="/lazy" element={<LazyLoadingAndSuspense />} />
+          <Route path="/res" element={<CoE />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/signup" element={<Signup />} />
         </Routes>

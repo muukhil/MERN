@@ -1,33 +1,48 @@
-nav{
-    display: flex;
-    justify-content: space-evenly;
-    background-color: chocolate;
-    align-items: center;
+nav {
+  display: flex;
+  list-style-type: none;
+  background-color: chocolate;
+  color: aliceblue;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
 }
-nav li{
-    color: white;
-    list-style-type: none;
-    text-decoration: none;
+.link {
+  font-size: larger;
+  /* background-color: seagreen; */
+  text-decoration: none;
+  color: aliceblue;
+  padding: 10px;
+  padding-right: 60px;
+  padding-left: 60px;
 }
-nav ul{
-    list-style-position: none;
+.link:hover {
+  background-color: aliceblue;
+  color: chocolate;
+  border-radius: 20px;
 }
-nav ul li{
-    position: relative;
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
-.dropdown-link{
-    position: absolute;
-    background-color: rgb(164, 116, 208);
-    /* margin-top: 5px; */
+.dropdown-list {
+  display: block;
+  position: absolute;
+  background-color: rgb(190, 157, 133);
+  padding: 5px;
+  list-style-type: none;
+  border-radius: 3px;
+  top: 15px;
+  left: 15px;
 }
-li a{
-    font-size: large;
-    color:white;
-    text-decoration: none;
-}
-li a:hover{
-    color: chocolate;
-    background-color: white;
+.dropdown-link {
+  text-decoration: none;
+  color: black;
+  padding: 5px 10px;
+  display: block;
+  border-radius: 3px;
 }
 
-
+.dropdown-link:hover {
+  background-color: #f0f0f0;
+}
