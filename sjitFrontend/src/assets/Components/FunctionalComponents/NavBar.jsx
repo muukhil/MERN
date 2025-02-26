@@ -47,6 +47,7 @@ const Navbar = () => {
         </div>
 
         <li><Link to="/res" className="link">ContextAPI</Link></li>
+        <li><Link to="/signup" className="link">Signup</Link></li>
         <li><Link to="/contact" className="link">Contact</Link></li>
         <li><Link to="/login" className="link">Login</Link></li>
       </nav>

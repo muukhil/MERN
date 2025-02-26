@@ -13,8 +13,8 @@ nav {
   text-decoration: none;
   color: aliceblue;
   padding: 10px;
-  padding-right: 60px;
-  padding-left: 60px;
+  /* padding-right: 60px;
+  padding-left: 60px; */
 }
 .link:hover {
   background-color: aliceblue;
