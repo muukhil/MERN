@@ -12,7 +12,7 @@ const PORT = process.env.PORT||3001;
 mdb.connect(process.env.MONGODB_URL).then(()=>{
     console.log('DB Connection Successful');
 }).catch((err)=>{
-    console.log('error: ',err);
+    console.log('DB Connection error: ',err);
 })
 
 app.get("/", (req,res)=>{
